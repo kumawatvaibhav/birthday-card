@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Happy birthday</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+<div class="body">
+ <div class="birthdayCard">
+ <div class="cardFront">
+        <h3 class="happy">HAPPY BIRTHDAY!</h3>
+ <div class="balloons">
+      <div class="balloonOne"></div>
+      <div class="balloonTwo"></div>
+      <div class="balloonThree"></div>
+      <div class="balloonFour"></div>
+  </div>
+  </div>
+  <div class="cardInside">
+    <h3 class="back">HAPPY BIRTHDAY!</h3>
+    <p contenteditable="true">Dear Maa,</p> 
+    <p contenteditable="true" >We love you much more than the words can tell
+      Not just on your birthday but on every single day!
+      No matter how old i get ill always be by your side
+      but please do eat sometimes thora sa break lagau fasting pe
+      Thank you for every thing you do for us Maa ,
+      WE LOVE YOU 😁  
+      
+
+    </p>
+    <p contenteditable="true"  class="name">Family</p>
+  </div>
+ <canvas id="canvas"></canvas>
+</div>
+<script>
+
+  // start
+
+  const start = () => {
+      setTimeout(function() {
+          confetti.start()
+      }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+  };
+
+  //  Stop
+
+  const stop = () => {
+      setTimeout(function() {
+          confetti.stop()
+      }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+  };
+
+  start();
+  stop();
+</script>
+</body>
+</html>
